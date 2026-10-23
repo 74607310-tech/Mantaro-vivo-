@@ -1,0 +1,25 @@
+MANTARO VIVO — App de reportes ambientales
+
+REQUISITOS
+- Python 3.10 o superior
+- Conexión a internet para instalar dependencias y mostrar el mapa base
+
+EJECUCIÓN EN WINDOWS
+1. Instala Python desde https://www.python.org/downloads/ (marca "Add Python to PATH").
+2. Extrae este ZIP en una carpeta.
+3. Abre la carpeta, haz clic en la barra de dirección del Explorador, escribe cmd y pulsa Enter.
+4. Ejecuta:
+   py -m pip install -r requirements.txt
+5. Luego ejecuta:
+   py -m streamlit run app.py
+6. Se abrirá el navegador; si no, entra a http://localhost:8501
+
+ARCHIVOS CREADOS AL USAR LA APP
+- reportes_mantaro.db: base de datos local SQLite
+- fotos_reportes/: fotografías cargadas
+- El botón del panel permite exportar reportes a CSV.
+
+IMPORTANTE
+Esta versión guarda información en la computadora donde se ejecuta. No sincroniza datos entre distintos usuarios/celulares.
+Para hacerla pública y compartida se necesita desplegarla en un servicio web y configurar almacenamiento/base de datos remotos,
+permisos y protección de datos. No publiques claves privadas en el código.
